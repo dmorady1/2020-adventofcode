@@ -1,6 +1,5 @@
 #!/usr/bin/env python3
 import re
-from time import sleep
 
 data = open("input.txt", "r").read().splitlines()
 
