@@ -156,8 +156,8 @@ graph = {line[0]: line[1::] for line in data}
 # 2+2* (2+2* (2+2* (2+2* (2+2* (2)))))
 def dfs2(graph, start="shinygold"):
     sum_count = dictionary_sums[start]
-    for node in graph[start]:
-        sum_count += node[0] * dfs2(graph, node[1])
+    for value, bag in graph[start]:
+        sum_count += value * dfs2(graph, bag)
 
     return sum_count
 
