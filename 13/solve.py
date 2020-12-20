@@ -26,6 +26,7 @@ from functools import reduce
 # chinese remainder theorem
 
 # https://brilliant.org/wiki/chinese-remainder-theorem/
+# https://www.dave4math.com/mathematics/chinese-remainder-theorem/
 
 
 n = [int(bus_id) for bus_id in data[1].split(",") if bus_id != "x"]
